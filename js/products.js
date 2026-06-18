@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "919999999999"; // ← Change to your real WhatsApp number
+const WHATSAPP_NUMBER = "919566366561"; // ← Change to your real WhatsApp number
 
 // ═══════════════════════════════════════════════════════════════
 // HOW TO ADD YOUR REAL PRODUCT IMAGES:
