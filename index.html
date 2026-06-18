@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ANG Solutions - Quality IT Products & Solutions. Shop Computers, Printers, Networking & Accessories in Chennai."/>
+  <title>ANG Solutions | Computer & IT Products</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="topbar-left d-flex gap-3">
+      <a href="tel:+919999999999"><i class="bi bi-telephone-fill"></i> +91 99999 99999</a>
+      <a href="mailto:info@angsolution.in"><i class="bi bi-envelope-fill"></i> info@angsolution.in</a>
+    </div>
+    <div class="topbar-right d-flex gap-2">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="https://wa.me/919999999999" target="_blank"><i class="bi bi-whatsapp"></i></a>
+      <a href="#"><i class="bi bi-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header sticky-top">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between py-2 gap-3">
+      <!-- Logo -->
+      <a href="index.html" class="logo-wrap">
+        <img src="images/logo.png" alt="ANG Solutions" class="logo-img"/>
+      </a>
+      <!-- Search -->
+      <div class="search-bar flex-grow-1 mx-3 d-none d-lg-flex">
+        <input type="text" placeholder="Search for computers, printers, laptops..." class="form-control search-input"/>
+        <button class="btn btn-search"><i class="bi bi-search"></i></button>
+      </div>
+      <!-- Contact CTA -->
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <a href="https://wa.me/919999999999" class="btn btn-whatsapp" target="_blank">
+          <i class="bi bi-whatsapp"></i> WhatsApp Us
+        </a>
+      </div>
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler d-lg-none" id="mobileMenuToggle">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-list d-flex align-items-center gap-0 mb-0 ps-0" id="mainNav">
+        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+
+        <li class="nav-item has-dropdown">
+          <a href="pages/category.html?cat=desktop-laptops" class="nav-link">Desktop & Laptops <i class="bi bi-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 mb-2"><span class="mega-label">Desktop & Laptops</span></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=assembled-desktop">Assembled Desktop</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=branded-desktop">Branded Desktop</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=branded-laptops">Branded Laptops</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=monitors">Monitors</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=keyboard-mouse">Keyboard / Mouse</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=ups">UPS</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=hdd">HDD</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=processor">Processor</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=desktop-ram">Desktop RAM</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=laptop-ram">Laptop RAM</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=motherboard">Motherboard / GPU</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=refurbished-laptop">Refurbished Laptop</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=smps">SMPS</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=cabinet">Cabinet</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=laptop-adapter">Laptop Adapter</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=cable">Cable</a></div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <a href="pages/category.html?cat=printers-scanners" class="nav-link">Printers & Scanners <i class="bi bi-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 mb-2"><span class="mega-label">Printers & Scanners</span></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=inktank-printers">Inktank Printers</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=laser-printers">Laser Printers</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=inkjet-printers">Inkjet Printers</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=dot-matrix">Dot Matrix Printers</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=thermal-printers">Thermal Printers</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=photo-printers">Photo Printers</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=passbook-printers">Passbook Printers</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=estamping-printers">E-Stamping Printers</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=document-scanners">Document Scanners</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=photo-scanners">Photo Scanners</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=barcode-scanners">Barcode Scanners</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=ink-bottles">Ink Bottles</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=toner-cartridges">Toner Cartridges</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=maintenance-box">Maintenance Box</a></div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <a href="pages/category.html?cat=networking" class="nav-link">Networking <i class="bi bi-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 mb-2"><span class="mega-label">Networking Products</span></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=wifi-routers">WiFi Routers</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=wifi-extender">WiFi Extender</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=switches">Switches</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=cables">Cables</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=wifi-receiver">WiFi Receiver</a></div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <a href="pages/category.html?cat=accessories" class="nav-link">Accessories <i class="bi bi-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 mb-2"><span class="mega-label">Other Accessories</span></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=headphone">Headphone</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=speaker">Speaker</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=webcam">Webcam</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=pendrive">Pendrive</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=usb-hub">USB Hub</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=antivirus">Antivirus</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=spike-buster">Spike Buster</a></div>
+                <div class="col-6 col-md-3"><a href="pages/category.html?cat=cable-tester">Cable Tester</a></div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item"><a href="pages/about.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="pages/contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <button class="mobile-close" id="mobileClose"><i class="bi bi-x-lg"></i></button>
+      <ul class="mobile-nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li class="mobile-has-sub">
+          <a href="#">Desktop & Laptops <i class="bi bi-chevron-down"></i></a>
+          <ul class="mobile-sub">
+            <li><a href="pages/category.html?cat=branded-laptops">Branded Laptops</a></li>
+            <li><a href="pages/category.html?cat=assembled-desktop">Assembled Desktop</a></li>
+            <li><a href="pages/category.html?cat=monitors">Monitors</a></li>
+            <li><a href="pages/category.html?cat=ups">UPS</a></li>
+          </ul>
+        </li>
+        <li class="mobile-has-sub">
+          <a href="#">Printers & Scanners <i class="bi bi-chevron-down"></i></a>
+          <ul class="mobile-sub">
+            <li><a href="pages/category.html?cat=inktank-printers">Inktank Printers</a></li>
+            <li><a href="pages/category.html?cat=laser-printers">Laser Printers</a></li>
+            <li><a href="pages/category.html?cat=document-scanners">Document Scanners</a></li>
+          </ul>
+        </li>
+        <li><a href="pages/category.html?cat=networking">Networking</a></li>
+        <li><a href="pages/category.html?cat=accessories">Accessories</a></li>
+        <li><a href="pages/about.html">About Us</a></li>
+        <li><a href="pages/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+</header>
+
+<!-- HERO SLIDER -->
+<section class="hero-slider">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active hero-slide slide-1">
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+          <div class="hero-content">
+            <span class="hero-badge">Genuine Products</span>
+            <h1>Quality Computers<br>& IT Solutions</h1>
+            <p>Browse 450+ products from HP, Epson, Canon & more trusted brands</p>
+            <div class="d-flex gap-3 flex-wrap justify-content-center">
+              <a href="pages/category.html?cat=desktop-laptops" class="btn btn-hero-primary">Shop Computers</a>
+              <a href="pages/contact.html" class="btn btn-hero-outline">Get Free Consultation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item hero-slide slide-2">
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+          <div class="hero-content">
+            <span class="hero-badge">Best Prices</span>
+            <h1>Printers & Scanners<br>for Every Need</h1>
+            <p>Laser, Inkjet, Inktank, Thermal — all major brands available</p>
+            <div class="d-flex gap-3 flex-wrap justify-content-center">
+              <a href="pages/category.html?cat=printers-scanners" class="btn btn-hero-primary">Shop Printers</a>
+              <a href="https://wa.me/919999999999" class="btn btn-hero-outline" target="_blank"><i class="bi bi-whatsapp"></i> Enquire on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item hero-slide slide-3">
+        <div class="container h-100 d-flex align-items-center justify-content-center">
+          <div class="hero-content">
+            <span class="hero-badge">Service Support</span>
+            <h1>Networking Products<br>& Accessories</h1>
+            <p>WiFi Routers, Switches, Peripherals — everything for your office setup</p>
+            <div class="d-flex gap-3 flex-wrap justify-content-center">
+              <a href="pages/category.html?cat=networking" class="btn btn-hero-primary">Shop Networking</a>
+              <a href="pages/contact.html" class="btn btn-hero-outline">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- TRUST BADGES -->
+<section class="trust-section">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-6 col-md-3 trust-item">
+        <i class="bi bi-patch-check-fill"></i>
+        <div>
+          <strong>Genuine Products</strong>
+          <span>100% authentic brands</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 trust-item">
+        <i class="bi bi-headset"></i>
+        <div>
+          <strong>Free Consultation</strong>
+          <span>Expert advice always</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 trust-item">
+        <i class="bi bi-truck"></i>
+        <div>
+          <strong>Fast Delivery</strong>
+          <span>Quick & safe shipping</span>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 trust-item">
+        <i class="bi bi-tools"></i>
+        <div>
+          <strong>Service Support</strong>
+          <span>After-sales assistance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP BY CATEGORY -->
+<section class="category-section section-gap">
+  <div class="container">
+    <div class="section-header text-center mb-4">
+      <h2>Shop by Category</h2>
+      <p>Find the right IT product for your needs</p>
+    </div>
+    <div class="row g-3 justify-content-center">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="pages/category.html?cat=desktop" class="cat-tile">
+          <div class="cat-icon"><i class="bi bi-pc-display"></i></div>
+          <span>Desktop</span>
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="pages/category.html?cat=laptop" class="cat-tile">
+          <div class="cat-icon"><i class="bi bi-laptop"></i></div>
+          <span>Laptop</span>
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="pages/category.html?cat=printers-scanners" class="cat-tile">
+          <div class="cat-icon"><i class="bi bi-printer"></i></div>
+          <span>Printer</span>
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="pages/category.html?cat=document-scanners" class="cat-tile">
+          <div class="cat-icon"><i class="bi bi-upc-scan"></i></div>
+          <span>Scanner</span>
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="pages/category.html?cat=wifi-routers" class="cat-tile">
+          <div class="cat-icon"><i class="bi bi-wifi"></i></div>
+          <span>WiFi Router</span>
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="pages/category.html?cat=speaker" class="cat-tile">
+          <div class="cat-icon"><i class="bi bi-speaker"></i></div>
+          <span>Speaker</span>
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="pages/category.html?cat=headphone" class="cat-tile">
+          <div class="cat-icon"><i class="bi bi-headphones"></i></div>
+          <span>Headphone</span>
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="pages/category.html?cat=webcam" class="cat-tile">
+          <div class="cat-icon"><i class="bi bi-camera-video"></i></div>
+          <span>Webcam</span>
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="pages/category.html?cat=monitors" class="cat-tile">
+          <div class="cat-icon"><i class="bi bi-display"></i></div>
+          <span>Monitor</span>
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="pages/category.html?cat=keyboard-mouse" class="cat-tile">
+          <div class="cat-icon"><i class="bi bi-keyboard"></i></div>
+          <span>Keyboard</span>
+        </a>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <a href="pages/category.html?cat=barcode-scanners" class="cat-tile">
+          <div class="cat-icon"><i class="bi bi-upc"></i></div>
+          <span>Barcode Scanner</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="products-section section-gap bg-light-grey">
+  <div class="container">
+    <div class="section-header d-flex align-items-center justify-content-between mb-4">
+      <div>
+        <h2>Featured Products</h2>
+        <p class="mb-0">Top picks from our catalogue</p>
+      </div>
+      <a href="pages/category.html" class="btn btn-outline-primary btn-sm">View All</a>
+    </div>
+    <div class="row g-3" id="featuredProducts">
+      <!-- Products injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- BRAND LOGOS -->
+<section class="brands-section section-gap">
+  <div class="container">
+    <div class="section-header text-center mb-4">
+      <h2>Brands We Carry</h2>
+      <p>Authorised dealer for all major IT brands</p>
+    </div>
+    <div class="brands-strip">
+      <div class="brand-item">HP</div>
+      <div class="brand-item">Epson</div>
+      <div class="brand-item">Canon</div>
+      <div class="brand-item">Brother</div>
+      <div class="brand-item">Kyocera</div>
+      <div class="brand-item">TVS</div>
+      <div class="brand-item">Dell</div>
+      <div class="brand-item">Lenovo</div>
+      <div class="brand-item">Asus</div>
+      <div class="brand-item">TP-Link</div>
+      <div class="brand-item">Logitech</div>
+      <div class="brand-item">Samsung</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <img src="images/logo.png" alt="ANG Solutions" class="footer-logo mb-3"/>
+          <p>Your trusted partner for computers, printers, networking products and IT accessories. Serving businesses and individuals across Chennai.</p>
+          <div class="social-links mt-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/919999999999" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/contact.html">Contact Us</a></li>
+            <li><a href="pages/category.html">All Products</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="pages/category.html?cat=desktop-laptops">Desktop & Laptops</a></li>
+            <li><a href="pages/category.html?cat=printers-scanners">Printers & Scanners</a></li>
+            <li><a href="pages/category.html?cat=networking">Networking</a></li>
+            <li><a href="pages/category.html?cat=accessories">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5>Contact Us</h5>
+          <ul class="contact-list">
+            <li><i class="bi bi-geo-alt-fill"></i> 123, IT Street, Chennai, Tamil Nadu - 600001</li>
+            <li><i class="bi bi-telephone-fill"></i> <a href="tel:+919999999999">+91 99999 99999</a></li>
+            <li><i class="bi bi-envelope-fill"></i> <a href="mailto:info@angsolution.in">info@angsolution.in</a></li>
+            <li><i class="bi bi-clock-fill"></i> Mon–Sat: 9:00 AM – 7:00 PM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <p class="mb-0">&copy; 2026 ANG Solutions. All rights reserved.</p>
+      <p class="mb-0">Designed for angsolution.in</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" title="Back to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- ENQUIRY MODAL -->
+<div class="modal fade" id="enquiryModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><i class="bi bi-chat-dots"></i> Product Enquiry</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="enquiry-product-name mb-3" id="modalProductName"></div>
+        <form id="enquiryForm" novalidate>
+          <input type="hidden" id="enquiryProductId"/>
+          <div class="mb-3">
+            <label class="form-label">Full Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="enquiryName" placeholder="Enter your name" required minlength="2"/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Mobile Number <span class="text-danger">*</span></label>
+            <div class="input-group">
+              <span class="input-group-text">+91</span>
+              <input type="tel" class="form-control" id="enquiryPhone" placeholder="10-digit mobile number" required pattern="[0-9]{10}" maxlength="10"/>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="enquiryEmail" placeholder="Optional"/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Quantity / Requirement</label>
+            <input type="text" class="form-control" id="enquiryQty" placeholder="e.g. 2 units, bulk order"/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message / Special Request</label>
+            <textarea class="form-control" id="enquiryMessage" rows="3" maxlength="500" placeholder="Any specific requirements..."></textarea>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-enquire-submit">
+              <i class="bi bi-send"></i> Send Enquiry
+            </button>
+            <a href="#" class="btn btn-whatsapp-modal" id="whatsappEnquiry" target="_blank">
+              <i class="bi bi-whatsapp"></i> Enquire via WhatsApp
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST NOTIFICATION -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert">
+    <div class="d-flex">
+      <div class="toast-body"><i class="bi bi-check-circle"></i> Enquiry sent successfully! We'll contact you soon.</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

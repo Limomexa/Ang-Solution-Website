@@ -1,0 +1,84 @@
+/* ===== CATEGORY PAGE STYLES ===== */
+
+.breadcrumb-bar {
+  background: var(--light-grey);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.breadcrumb-item a { color: var(--blue); font-size: 13px; }
+.breadcrumb-item.active { font-size: 13px; color: var(--text-muted); }
+.breadcrumb-item + .breadcrumb-item::before { color: var(--text-muted); }
+
+/* FILTER SIDEBAR */
+.filter-sidebar {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: sticky;
+  top: 100px;
+}
+.filter-header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 14px 18px;
+}
+.filter-header h5 { margin: 0; font-size: 15px; font-weight: 600; }
+.btn-clear-filter {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.85);
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.btn-clear-filter:hover { background: rgba(255,255,255,0.15); }
+
+.filter-group { padding: 16px 18px; border-bottom: 1px solid var(--border); }
+.filter-group:last-child { border-bottom: none; }
+.filter-group-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.filter-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-dark);
+  cursor: pointer;
+  padding: 4px 0;
+}
+.filter-check input[type="checkbox"] {
+  accent-color: var(--blue);
+  width: 15px; height: 15px;
+}
+.filter-check:hover { color: var(--blue); }
+.filter-count {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--text-muted);
+  background: var(--light-grey);
+  padding: 1px 7px;
+  border-radius: 10px;
+}
+.price-range input[type="range"] { accent-color: var(--blue); }
+.filter-label { font-size: 12px; color: var(--text-muted); }
+
+/* SORT & COUNT */
+.product-count { font-size: 13px; color: var(--text-muted); }
+.sort-select {
+  width: auto;
+  min-width: 180px;
+  font-size: 13px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+.sort-select:focus { border-color: var(--blue); box-shadow: none; }

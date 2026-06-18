@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products | ANG Solutions</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/category.css"/>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="topbar-left d-flex gap-3">
+      <a href="tel:+919999999999"><i class="bi bi-telephone-fill"></i> +91 99999 99999</a>
+      <a href="mailto:info@angsolution.in"><i class="bi bi-envelope-fill"></i> info@angsolution.in</a>
+    </div>
+    <div class="topbar-right d-flex gap-2">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="https://wa.me/919999999999" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header sticky-top">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between py-2 gap-3">
+      <a href="../index.html" class="logo-wrap">
+        <img src="../images/logo.png" alt="ANG Solutions" class="logo-img"/>
+      </a>
+      <div class="search-bar flex-grow-1 mx-3 d-none d-lg-flex">
+        <input type="text" placeholder="Search products..." class="form-control search-input" id="searchInput"/>
+        <button class="btn btn-search" onclick="doSearch()"><i class="bi bi-search"></i></button>
+      </div>
+      <a href="https://wa.me/919999999999" class="btn btn-whatsapp d-none d-lg-flex" target="_blank">
+        <i class="bi bi-whatsapp"></i> WhatsApp Us
+      </a>
+      <button class="navbar-toggler d-lg-none" id="mobileMenuToggle"><i class="bi bi-list"></i></button>
+    </div>
+  </div>
+
+  <!-- NAVIGATION — identical full mega menu always shown -->
+  <nav class="main-nav d-none d-lg-block">
+    <div class="container">
+      <ul class="nav-list d-flex align-items-center gap-0 mb-0 ps-0" id="mainNav">
+        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+
+        <li class="nav-item has-dropdown">
+          <a href="category.html?cat=desktop-laptops" class="nav-link">Desktop & Laptops <i class="bi bi-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="container"><div class="row">
+              <div class="col-12 mb-2"><span class="mega-label">Desktop & Laptops</span></div>
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=assembled-desktop">Assembled Desktop</a></div> -->
+              <div class="col-6 col-md-3"><a href="category.html?cat=branded-desktop">Branded Desktop</a></div>
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=branded-laptops">Branded Laptops</a></div> -->
+              <div class="col-6 col-md-3"><a href="category.html?cat=monitors">Monitors</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=keyboard-mouse">Keyboard / Mouse</a></div>
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=ups">UPS</a></div> -->
+              <div class="col-6 col-md-3"><a href="category.html?cat=hdd">HDD</a></div>
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=processor">Processor</a></div> -->
+              <div class="col-6 col-md-3"><a href="category.html?cat=desktop-ram">Desktop RAM</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=laptop-ram">Laptop RAM</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=motherboard">Motherboard</a></div>
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=refurbished-laptop">Refurbished Laptop</a></div> -->
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=smps">SMPS</a></div> -->
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=cabinet">Cabinet</a></div> -->
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=laptop-adapter">Laptop Adapter</a></div> -->
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=cable">Cable</a></div> -->
+            </div></div>
+          </div>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <a href="category.html?cat=printers-scanners" class="nav-link">Printers & Scanners <i class="bi bi-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="container"><div class="row">
+              <div class="col-12 mb-2"><span class="mega-label">Printers & Scanners</span></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=inktank-printers">Inktank Printers</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=laser-printers">Laser Printers</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=inkjet-printers">Inkjet Printers</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=dot-matrix">Dot Matrix Printers</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=thermal-printers">Thermal Printers</a></div>
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=photo-printers">Photo Printers</a></div> -->
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=passbook-printers">Passbook Printers</a></div> -->
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=estamping-printers">E-Stamping Printers</a></div> -->
+              <div class="col-6 col-md-3"><a href="category.html?cat=document-scanners">Document Scanners</a></div>
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=photo-scanners">Photo Scanners</a></div> -->
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=barcode-scanners">Barcode Scanners</a></div> -->
+              <div class="col-6 col-md-3"><a href="category.html?cat=ink-bottles">Ink Bottles</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=toner-cartridges">Toner Cartridges</a></div>
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=maintenance-box">Maintenance Box</a></div> -->
+            </div></div>
+          </div>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <a href="category.html?cat=networking" class="nav-link">Networking <i class="bi bi-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="container"><div class="row">
+              <div class="col-12 mb-2"><span class="mega-label">Networking Products</span></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=wifi-routers">WiFi Routers</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=wifi-extender">WiFi Extender</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=switches">Switches</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=cables">Cables</a></div>
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=wifi-receiver">WiFi Receiver</a></div> -->
+            </div></div>
+          </div>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <a href="category.html?cat=accessories" class="nav-link">Accessories <i class="bi bi-chevron-down"></i></a>
+          <div class="mega-menu">
+            <div class="container"><div class="row">
+              <div class="col-12 mb-2"><span class="mega-label">Other Accessories</span></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=headphone">Headphone</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=speaker">Speaker</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=webcam">Webcam</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=pendrive">Pendrive</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=usb-hub">USB Hub</a></div>
+              <div class="col-6 col-md-3"><a href="category.html?cat=antivirus">Antivirus</a></div>
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=spike-buster">Spike Buster</a></div> -->
+              <!-- <div class="col-6 col-md-3"><a href="category.html?cat=cable-tester">Cable Tester</a></div> -->
+            </div></div>
+          </div>
+        </li>
+
+        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <button class="mobile-close" id="mobileClose"><i class="bi bi-x-lg"></i></button>
+      <ul class="mobile-nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li class="mobile-has-sub">
+          <a href="#">Desktop & Laptops <i class="bi bi-chevron-down"></i></a>
+          <ul class="mobile-sub">
+            <li><a href="category.html?cat=branded-laptops">Branded Laptops</a></li>
+            <li><a href="category.html?cat=assembled-desktop">Assembled Desktop</a></li>
+            <li><a href="category.html?cat=monitors">Monitors</a></li>
+            <li><a href="category.html?cat=keyboard-mouse">Keyboard / Mouse</a></li>
+            <li><a href="category.html?cat=ups">UPS</a></li>
+            <li><a href="category.html?cat=hdd">HDD / SSD</a></li>
+            <li><a href="category.html?cat=processor">Processor</a></li>
+          </ul>
+        </li>
+        <li class="mobile-has-sub">
+          <a href="#">Printers & Scanners <i class="bi bi-chevron-down"></i></a>
+          <ul class="mobile-sub">
+            <li><a href="category.html?cat=inktank-printers">Inktank Printers</a></li>
+            <li><a href="category.html?cat=laser-printers">Laser Printers</a></li>
+            <li><a href="category.html?cat=document-scanners">Document Scanners</a></li>
+            <li><a href="category.html?cat=ink-bottles">Ink Bottles</a></li>
+            <li><a href="category.html?cat=toner-cartridges">Toner Cartridges</a></li>
+          </ul>
+        </li>
+        <li class="mobile-has-sub">
+          <a href="#">Networking <i class="bi bi-chevron-down"></i></a>
+          <ul class="mobile-sub">
+            <li><a href="category.html?cat=wifi-routers">WiFi Routers</a></li>
+            <li><a href="category.html?cat=wifi-extender">WiFi Extender</a></li>
+            <li><a href="category.html?cat=switches">Switches</a></li>
+          </ul>
+        </li>
+        <li class="mobile-has-sub">
+          <a href="#">Accessories <i class="bi bi-chevron-down"></i></a>
+          <ul class="mobile-sub">
+            <li><a href="category.html?cat=headphone">Headphone</a></li>
+            <li><a href="category.html?cat=speaker">Speaker</a></li>
+            <li><a href="category.html?cat=webcam">Webcam</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0" id="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active" id="breadcrumbCat">All Products</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container py-4">
+  <div class="row g-4">
+
+    <!-- SIDEBAR FILTER -->
+    <div class="col-lg-3">
+      <div class="filter-sidebar">
+        <div class="filter-header d-flex justify-content-between align-items-center">
+          <h5>Filters</h5>
+          <button class="btn-clear-filter" onclick="clearFilters()">Clear All</button>
+        </div>
+
+        <!-- Category filter — dynamic subcategory list -->
+        <div class="filter-group">
+          <div class="filter-group-title">Category</div>
+          <div id="categoryFilters"></div>
+        </div>
+
+        <!-- Brand filter -->
+        <div class="filter-group">
+          <div class="filter-group-title">Brand</div>
+          <div id="brandFilters"></div>
+        </div>
+
+        <!-- Price filter -->
+        <div class="filter-group">
+          <div class="filter-group-title">Price Range</div>
+          <div class="price-range">
+            <input type="range" class="form-range" id="priceRange" min="0" max="100000" step="500" value="100000" oninput="updatePriceFilter(this.value)"/>
+            <div class="d-flex justify-content-between mt-1">
+              <span class="filter-label">₹0</span>
+              <span class="filter-label" id="priceLabel">Up to ₹1,00,000</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stock filter -->
+        <div class="filter-group">
+          <div class="filter-group-title">Availability</div>
+          <label class="filter-check">
+            <input type="checkbox" id="inStockOnly" onchange="applyFilters()"/> In Stock Only
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCT GRID -->
+    <div class="col-lg-9">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
+        <div class="product-count" id="productCount">Showing all products</div>
+        <select class="form-select sort-select" id="sortSelect" onchange="applyFilters()">
+          <option value="default">Sort: Default</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="discount">Biggest Discount</option>
+        </select>
+      </div>
+      <div class="row g-3" id="productGrid"></div>
+      <div class="text-center mt-4" id="noResults" style="display:none">
+        <i class="bi bi-search" style="font-size:48px;color:#CBD5E0"></i>
+        <p class="mt-2 text-muted">No products found. Try different filters.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer mt-5">
+  <div class="footer-bottom">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <p class="mb-0">&copy; 2026 ANG Solutions. All rights reserved.</p>
+      <a href="../index.html" class="text-white-50" style="font-size:13px">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank"><i class="bi bi-whatsapp"></i></a>
+<button class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></button>
+
+<!-- ENQUIRY MODAL -->
+<div class="modal fade" id="enquiryModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><i class="bi bi-chat-dots"></i> Product Enquiry</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="enquiry-product-name mb-3" id="modalProductName"></div>
+        <form id="enquiryForm" novalidate>
+          <input type="hidden" id="enquiryProductId"/>
+          <div class="mb-3">
+            <label class="form-label">Full Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="enquiryName" placeholder="Your name" required/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Mobile Number <span class="text-danger">*</span></label>
+            <div class="input-group">
+              <span class="input-group-text">+91</span>
+              <input type="tel" class="form-control" id="enquiryPhone" placeholder="10-digit number" required pattern="[0-9]{10}" maxlength="10"/>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" id="enquiryEmail" placeholder="Optional"/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Quantity</label>
+            <input type="text" class="form-control" id="enquiryQty" placeholder="e.g. 2 units"/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" id="enquiryMessage" rows="3" maxlength="500"></textarea>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-enquire-submit"><i class="bi bi-send"></i> Send Enquiry</button>
+            <a href="#" class="btn btn-whatsapp-modal" id="whatsappEnquiry" target="_blank"><i class="bi bi-whatsapp"></i> WhatsApp Enquiry</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="successToast" class="toast align-items-center text-bg-success border-0">
+    <div class="d-flex">
+      <div class="toast-body"><i class="bi bi-check-circle"></i> Enquiry sent! We'll contact you soon.</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/products.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/category.js"></script>
+</body>
+</html>
